@@ -11,23 +11,23 @@ const Footer = () => {
           </figure>
           <div className="footer__social--list">
             <a
-              href="#"
+              href="https://github.com/Tazman60"
               target="_blank"
-              className="footer__social--link link__hover-effect link__hover-effect--white"
+              className="footer__social--link link__hover-effect"
             >
               Github
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/manny-lorenzo"
               target="_blank"
-              className="footer__social--link link__hover-effect link__hover-effect--white"
+              className="footer__social--link link__hover-effect"
             >
               LinkedIn
             </a>
             <a
               href="#"
               target="_blank"
-              className="footer__social--link link__hover-effect link__hover-effect--white"
+              className="footer__social--link link__hover-effect"
             >
               Contact
             </a>

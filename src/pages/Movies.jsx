@@ -40,9 +40,7 @@ const Movies = () => {
     }
 
     function movieHTML(movie) {
-      console.log(movie);
-      console.log(movie.imdbID);
-      return `<a href="/movies/${movie.imbdID}" class="movie-card">
+      return `<a href="/movies/${movie.imdbID}" class="movie-card">
         <div class="movie-card__container">
           <figure class="movie__image--wrapper flex justify-center align-center">
             <img src="${movie.Poster}" alt="" class="poster__img" />
@@ -51,7 +49,6 @@ const Movies = () => {
             ${movie.Title}
           </div>
                 <p><b>Year:</b> ${movie.Year}</p>
-                <p><b>Movie ID:</b> ${movie.imdbID}</p>
             </div>
         </a>`;
     }
