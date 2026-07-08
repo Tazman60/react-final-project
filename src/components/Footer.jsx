@@ -12,21 +12,21 @@ const Footer = () => {
           <div className="footer__social--list">
             <a
               href="https://github.com/Tazman60"
-              target="_blank"
+              target="_blank" rel="noreferrer"
               className="footer__social--link link__hover-effect"
             >
               Github
             </a>
             <a
               href="https://www.linkedin.com/in/manny-lorenzo"
-              target="_blank"
+              target="_blank" rel="noreferrer"
               className="footer__social--link link__hover-effect"
             >
               LinkedIn
             </a>
             <a
-              href="#"
-              target="_blank"
+              href="mailto:mlorenzo@msn.com" 
+              target="_blank" rel="noreferrer"
               className="footer__social--link link__hover-effect"
             >
               Contact

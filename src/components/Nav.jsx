@@ -26,7 +26,7 @@ const Nav = () => {
               >
                 Find your movie
               </a>
-              <a href="" className="btn-contact">
+              <a href="mailto:mlorenzo@msn.com" className="btn-contact">
                 Contact
               </a>
             </div>

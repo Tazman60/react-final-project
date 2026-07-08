@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 const Movieinfo = () => {
   //   useEffect(() => {
   // const movieInfoEl = document.querySelector(".movie__selected");
-  const api = "https://www.omdbapi.com/?apikey=c1438081&i=";
-  const imdbId = "tt2015381";
+  // const api = "https://www.omdbapi.com/?apikey=c1438081&i=";
+  // const imdbId = "tt2015381";
   const { id } = useParams();
   // const movie = movies.find((movie) => +movie.imdbId === +id);
 
@@ -27,7 +27,7 @@ const Movieinfo = () => {
       setLoading(false);
     };
     loadMovie();
-  }, []);
+  }, [id]);
 
   // if (loading) {
   //   return <h4>Loading...</h4>;
