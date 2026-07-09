@@ -13,6 +13,12 @@ const Movies = () => {
     async function filteredMovies(event) {
       const movies = await fetch(api + input.value);
       const movieData = await movies.json();
+
+      if (!movieData.Search) {
+        movieListEl.innerHTML = `<p>No movies found. Try another title.</p>`;
+        return;
+      }
+
       let sortedMovies = [];
       if (event.target.value === "OLDER_TO_NEWER") {
         sortedMovies = movieData.Search.sort((a, b) => a.Year - b.Year);
@@ -34,6 +40,11 @@ const Movies = () => {
       const movies = await fetch(api + input.value);
       const movieData = await movies.json();
 
+      if (!movieData.Search) {
+        movieListEl.innerHTML = `<p>No movies found. Try another title.</p>`;
+        return;
+      }
+      
       movieListEl.innerHTML = movieData.Search.slice(0, 6)
         .map((movie) => movieHTML(movie))
         .join("");
